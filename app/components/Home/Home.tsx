@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='overflow-hidden'>Home</div>
+    <div className='w-20 h-20'>Home</div>
   )
 }
 
