@@ -16,7 +16,15 @@
     "plugins": [
       {
         "name": "next"
-      }
+      },
+      {
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
     ],
     "paths": {
       "@/*": ["./*"]

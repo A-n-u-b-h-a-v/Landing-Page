@@ -34,19 +34,23 @@ subtext?: string;
 
 export const LeverageLinks: LeverageLink[] = [
   {
-    text: "850+ University Partners",
+    number: "850+",
+    text: "University Partners",
     image: "🤝",
   },
   {
-    text: "45,000+ Success Stories",
+    number: "40000+",
+    text: "Success Stories",
     image: "🏆",
   },
   {
-    text: "Scholarship up to 50%*",
+    number: "1000+",
+    text: "Scholarship up to*",
     image: "🪙",
   },
   {
-    text: "Courses starting at ₹8 Lakhs*",
+    number: "8 Lakhs",
+    text: "Courses starting*",
     image: "🎓",
   }
   

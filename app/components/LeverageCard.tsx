@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LeverageCard = ({ title,subtitle, icon }: { title: string;subtitle:string|undefined; icon: any }) => {
+const LeverageCard = ({ title,subtitle, icon, number}: { title: string;subtitle:string|undefined; icon: any;number:string|undefined }) => {
     return (
         <div className="bg-white p-4 rounded-lg shadow-md min-h-32 cursor-pointer w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto transition-transform duration-300 hover:scale-105 ease-in-out">
             <div className="flex flex-col gap-6 items-center">
@@ -8,6 +8,7 @@ const LeverageCard = ({ title,subtitle, icon }: { title: string;subtitle:string|
   {icon}
 </div>
 
+<div className='fw-bolder text-black fs-6 text-4xl font-extrabold'>{number}</div>
 
                 <div>
                     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-center">{title}</h3>

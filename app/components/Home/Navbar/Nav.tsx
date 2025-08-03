@@ -21,19 +21,19 @@ const Nav = ({openNav}:Props) => {
         return ()=> window.removeEventListener("scroll",handler);
     },[])
   return (
-    <div className={`transition-all ${navBg ? "bg-blue-900 shadow-md" : "fixed"} duration-200 h-[12vh] z-[100] fixed w-full bg-blue-900`}>
+    <div className={`transition duration-300 ease-in-out ${navBg ? "bg-white shadow-md" : "fixed"} duration-200 h-[12vh] z-[100] fixed w-full `}>
         <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
             {/* Logo */}
             <div className='flex items-center space-x-2'>
-                <div className='w-10 h-10 bg-white rounded-full flex items-center justify-center flex-col'>
-                    <FaTooth className='w-8 h-8 text-black' />
+                <div className='w-10 h-10 bg-black rounded-full flex items-center justify-center flex-col'>
+                    <FaTooth className='w-8 h-8 text-white' />
                 </div>
-                <h1 className='text-xl hidden sm:block md:text-2xl text-white font-bold'>FlyHigh</h1>
+                <h1 className='text-xl hidden sm:block md:text-2xl text-balck font-bold'>FlyHigh</h1>
                 </div>
                 {/* Navlink */}
                 <div className='hidden lg:flex items-center space-x-10'>
                     {Navlinks.map((link)=>{
-                        return <Link href={link.url} key={link.id} className='text-white text-lg hover:text-pink-300 font-semibold transition-all duration-200'>
+                        return <Link href={link.url} key={link.id} className='text-black text-white:-[90%] text-lg hover:text-pink-300 font-semibold transition-all duration-200'>
                             <p>{link.lable}</p>
                         </Link>
                     })} 
